@@ -57,11 +57,12 @@ ruff = "0.0.277"
 log_cli = true
 
 [tool.poetry-dynamic-versioning]
-# poetry self add "poetry-dynamic-versioning[plugin]"
+# poetry self add "poetry-dynamic-versioning[plugin]==0.25.0b2"
 enable = true
-strict = false
+strict = true
 bump = true
 metadata = false
+fix-shallow-repository=true
 vcs = "git"
 style = "pep440"
 
